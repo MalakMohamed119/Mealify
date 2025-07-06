@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mealify - Restaurant</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#">Mealify<span>.</span></a>
+          </div>
+      
+          <!-- Navigation links (centered on large screens) -->
+          <div class="nav-links d-none d-lg-flex flex-grow-1 justify-content-center" id="navLinks">
+            <ul class="d-flex gap-4 mb-0">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#chefs">Chefs</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Dark mode toggle (always visible) -->
+          <div class="nav-actions d-flex align-items-center gap-3">
+            <button id="themeToggle" class="theme-toggle">
+              <i class="fa fa-moon"></i>
+            </button>
+      
+            <!-- Toggle appears only on small screens -->
+            <button class="navbar-toggle d-lg-none" id="navbarToggle">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      
+        <!-- Navigation links (for small screens only) -->
+        <div class="nav-links d-lg-none" id="navLinksSmall">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+
+  <!-- Main Section -->
+  <section class="main-section" id="home">
+    <div class="container">
+      <div class="main-content">
+        <h1 class="main-title">ENJOY YOUR HEALTHY DELICIOUS FOOD</h1>
+        <p class="main-text">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet...</p>
+        <div class="main-buttons">
+          <a href="#" class="btn btn-primary">Book a Table</a>
+          <a href="#" class="btn btn-outline">Watch Video</a>
+        </div>
+      </div>
+      <div class="main-image">
+        <img src="photo/hero-img-removebg-preview.png" alt="Delicious food" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Chefs Section -->
+  <section class="chefs-section" id="chefs">
+    <div class="section-header">
+      <p class="section-subtitle">CHEFS</p>
+      <h2 class="section-title">OUR <span>PROFESSIONAL</span> CHEFS</h2>
+    </div>
+    <div class="chefs-container">
+      <div class="chef-card">
+        <img src="photo/chefs/chefs-1.jpg" alt="Walter White" class="chef-img" />
+        <div class="chef-info">
+          <h3 class="chef-name">Walter White</h3>
+          <p class="chef-role">Master Chef</p>
+          <p class="chef-bio">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore...</p>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="photo/chefs/chefs-2.jpg" alt="Sarah Johnson" class="chef-img" />
+        <div class="chef-info">
+          <h3 class="chef-name">Sarah Johnson</h3>
+          <p class="chef-role">Patissier</p>
+          <p class="chef-bio">Quo esse repellendus quia id. Est eum et accusantium pariatur...</p>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="photo/chefs/chefs-3.jpg" alt="William Anderson" class="chef-img" />
+        <div class="chef-info">
+          <h3 class="chef-name">William Anderson</h3>
+          <p class="chef-role">Cook</p>
+          <p class="chef-bio">Vero omnis enim consequatur. Voluptas consectetur unde qui...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <p class="section-subtitle">GALLERY</p>
+      <h2 class="section-title">CHECK <span> OUR GALLERY</span></h2>
+    </div>
+    <div class="gallery-container">
+      <div class="gallery-column">
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-1.jpg" alt="Burger" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Pizza</h3>
+            <p class="gallery-item-desc">Hawaiian pizza with ham and pineapple</p>
+          </div>
+        </div>
+  
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-4.jpg" alt="Pizza" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Levitation pizza</h3>
+            <p class="gallery-item-desc">Levitation pizza on black background.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-column">
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-2.jpg" alt="Salad" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Beef steaks</h3>
+            <p class="gallery-item-desc">Tasty beef steaks flying above cast iron grate with fire flames.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-7.jpg" alt="Dessert" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Frittata</h3>
+            <p class="gallery-item-desc">Frittata or potato pie in a ceramic plate.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-column">
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-3.jpg" alt="Burger" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Burger</h3>
+            <p class="gallery-item-desc">Grass fed bison hamburger with chips & beer</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-5.jpg" alt="Fried Chicken" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Fried Chicken</h3>
+            <p class="gallery-item-desc">Golden brown chicken legs with juicy meat</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="photo/gallery/meal-6.jpg" alt="Kofta" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h3 class="gallery-item-title">Kofta</h3>
+            <p class="gallery-item-desc">Fresh Kofta with bread</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <p class="section-subtitle">CONTACT</p>
+      <h2 class="section-title">NEED HELP? <span>CONTACT US</span></h2>
+    </div>
+  
+    <!-- Google Map  -->
+    <div class="map-wrapper mb-5">
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209132579!2d-73.991844924266!3d40.74105197138948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2s157%20William%20St%2C%20New%20York%2C%20NY%2010038%2C%20USA!5e0!3m2!1sen!2s!4v1718767891230!5m2!1sen!2s"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  
+    <!-- Contact Info  -->
+    <div class="contact-boxes-row">
+      <div class="contact-box">
+        <i class="fas fa-map-marker-alt contact-icon"></i>
+        <div><h3>Our Address</h3><p>A108 Adam Street, New York, NY 535022</p></div>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-phone contact-icon"></i>
+        <div><h3>Call Us</h3><p>+1 5589 55488 55</p></div>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-envelope contact-icon"></i>
+        <div><h3>Email Us</h3><p>contact@example.com</p></div>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-clock contact-icon"></i>
+        <div><h3>Opening Hours</h3><p>Mon-Sat: 11AM - 23PM<br>Sunday: Closed</p></div>
+      </div>
+    </div>
+  
+    <!-- Contact Form -->
+    <div class="contact-form-container " style="margin-top: 40px;">
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group half-width">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group half-width">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Subject" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Message" rows="5" required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="submit-btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="logo--container">
+        <img src="photo/favicon.png" alt="flogo" />
+        <h2>Mealify</h2>
+      </div>
+      <p>Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>
+      <div class="social-media">
+        <h3>Social Media</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="newsletter">
+        <h3>Subscribe Our Newsletter</h3>
+        <p>Don't miss out on our latest menu updates and exclusive offers...</p>
+        <div class="email-container">
+          <input type="email" placeholder="Your Email Address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Promo</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+        <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> info@mealfy.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
